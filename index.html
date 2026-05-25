@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pole Hire — Professional Pole Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo-link">
+            <img src="logo.svg" alt="Pole Hire Logo" class="logo-img">
+        </a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <span class="toggle-icon">🌓</span>
+        </button>
+    </nav>
+
+    <header class="hero">
+        <h1>Welcome to Pole Hire</h1>
+        <p class="tagline">The new face of professional pole solutions. Previously Pole Daddy, now rebuilt for you.</p>
+    </header>
+
+    <main>
+        <section class="section about">
+            <h2>What We Do</h2>
+            <p>We specialise in pole hire for events, construction, and residential projects. Our fleet is modern, maintained, and ready when you are.</p>
+        </section>
+
+        <section class="section services">
+            <h2>Services</h2>
+            <ul class="service-list">
+                <li>Event Pole Hire</li>
+                <li>Construction Support Poles</li>
+                <li>Residential & Decorative</li>
+                <li>Delivery & Pickup Available</li>
+            </ul>
+        </section>
+
+        <section class="section booking">
+            <h2>Request a Booking</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="booking-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="04xx xxx xxx">
+
+                <label for="date">Event / Hire Date</label>
+                <input type="date" id="date" name="date">
+
+                <label for="details">Job Details</label>
+                <textarea id="details" name="details" rows="4" placeholder="Tell us what you need..." required></textarea>
+
+                <button type="submit" class="btn-primary">Send Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© Pole Hire. Rebranded from Pole Daddy.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
